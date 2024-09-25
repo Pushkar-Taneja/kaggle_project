@@ -1,27 +1,47 @@
-# Titanic Passenger Analysis
+# Alternate Dimenesional Analysis
 
 ## Overview
-This repository contains an analysis of the Titanic dataset, aiming to explore the factors that influenced passenger survival rates during the ill-fated voyage. By examining various attributes such as passenger demographics, ticket class, and travel fare, this project seeks to uncover insights and patterns that contributed to survival.
+This repository contains an analysis of the Spaceship_Titanic dataset. In this analysis, our objective is to predict whether a passenger aboard the Spaceship Titanic was transported to an alternate dimension during the catastrophic collision with a spacetime anomaly. This unique event poses a fascinating challenge, blending elements of science fiction with data science.
 
-## Dataset
-The dataset used in this analysis is derived from Kaggle's Titanic competition, which provides a comprehensive collection of passenger data, including:
-- Passenger Class (Pclass)
-- Name
-- Sex
-- Age
-- Sibling/Spouse Count (SibSp)
-- Parent/Child Count (Parch)
-- Ticket Number
-- Fare
-- Cabin
-- Embarked Port
+The Spaceship Titanic, a luxurious interstellar vessel, encountered a mysterious spacetime anomaly that has led to the disappearance of certain passengers. Utilizing various passenger features such as demographics, spending behaviors, and CryoSleep status, we aim to build a predictive model that can accurately classify passengers based on whether they were transported to an alternate dimension.
+
+## Dataset: Spaceship Titanic Passenger Records
+The dataset consists of personal records for approximately two-thirds (~8700) of the passengers aboard the Spaceship Titanic. This data serves as the training set for predictive modeling, aiming to determine whether passengers were transported to an alternate dimension during the ship's collision with a spacetime anomaly. Below is a detailed description of each feature included in the dataset:
+
+### PassengerId:
+  A unique identifier for each passenger. The format is gggg_pp, where gggg represents the group the passenger is traveling with and pp indicates their number within that group. This feature can reveal family or group connections among passengers.
+
+### HomePlanet:
+  The planet from which the passenger departed, typically indicating their planet of permanent residence. This feature can provide insights into the demographics and origins of the passengers.
+
+### CryoSleep:
+  A binary indicator that shows whether the passenger elected to enter suspended animation for the duration of the voyage. Passengers in CryoSleep are confined to their cabins, which may affect their likelihood of being transported to another dimension during the collision.
+
+### Cabin:
+  The cabin number assigned to the passenger, structured in the format deck/num/side, where side can be either P (Port) or S (Starboard). This information may relate to the passenger's location on the ship.
+
+### Destination: 
+ The planet where the passenger is scheduled to debark. This feature indicates the intended endpoint of their journey.
+
+### Age:
+  The age of the passenger, which may correlate with survival rates and the likelihood of being transported during the anomaly.
+
+### VIP:
+  A binary indicator showing whether the passenger has purchased special VIP services for the voyage. This could reflect on their spending patterns and potentially their chances of being transported.
+
+### RoomService, FoodCourt, ShoppingMall, Spa, VRDeck:
+  These features represent the amounts billed to the passenger for various luxury amenities on the Spaceship Titanic. Analyzing spending patterns across these amenities could offer insights into passenger behavior and preferences.
+
+### Name:
+  The full name of the passenger, consisting of their first and last names. While not directly useful for prediction, it may help in identifying relationships or familial connections.
+Transported:  This is the target variable, indicating whether the passenger was transported to another dimension during the collision. This binary outcome is the primary focus of the predictive modeling effort.
 
 ## Questions Explored
 This analysis aims to answer the following questions:
-- What demographic factors influenced survival rates?
-- How did ticket class impact the likelihood of survival?
-- What was the distribution of ages among survivors versus non-survivors?
-- What patterns can be observed in passenger fare with respect to survival?
+- The Age vs Spending rates.
+- Factors affecting the transportation of passengers.
+- How many passengers were able to get transported in another dimension?
+- What was the passenger status in the cabin? 
 
 ## Tools Used
 The following tools and libraries were utilized in this analysis:
